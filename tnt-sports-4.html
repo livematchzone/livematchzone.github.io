@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type='text/javascript' src='//trashycontinuousbubbly.com/60/22/6d/60226d4e8bb5a8bd17e61233f4050c0e.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tnt-Sports-4</title>
+    <style>
+        body {
+            text-align: center;
+            background: #000;
+            color: #fff;
+        }
+        .iframe-container {
+            width: 100%;
+            max-width: 1200px;
+            height: 600px;
+            overflow: hidden;
+            position: relative;
+            margin: auto;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 20px auto;
+            cursor: pointer;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Tnt-Sports-4</h2>
+
+<script type="text/javascript">
+    atOptions = {
+        'key' : '329e4e16be857e74719c7bd77be59ed9',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+    };
+</script>
+<script type="text/javascript" src="//trashycontinuousbubbly.com/329e4e16be857e74719c7bd77be59ed9/invoke.js"></script>
+
+    <div class="iframe-container" id="iframeWrapper">
+        <iframe id="myIframe" 
+            style="border:0px;" 
+            name="myiFrame" 
+            scrolling="no" 
+            frameborder="1" 
+            marginheight="0px" 
+            marginwidth="0px" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <button onclick="openFullscreen()">Go Fullscreen</button>
+
+    <script>
+        function decodeAndLoadIframe() {
+            var encodedUrl = "aHR0cHM6Ly90YW1hc2hhbGl2ZS5naXRodWIuaW8vdG50LXNwb3J0cy00Lmh0bWw=";
+            var decodedUrl = atob(encodedUrl);
+            document.getElementById('myIframe').src = decodedUrl;
+        }
+
+        function openFullscreen() {
+            let wrapper = document.getElementById("iframeWrapper");
+            if (wrapper.requestFullscreen) {
+                wrapper.requestFullscreen();
+            } else if (wrapper.mozRequestFullScreen) { // Firefox
+                wrapper.mozRequestFullScreen();
+            } else if (wrapper.webkitRequestFullscreen) { // Chrome, Safari, Opera
+                wrapper.webkitRequestFullscreen();
+            } else if (wrapper.msRequestFullscreen) { // IE/Edge
+                wrapper.msRequestFullscreen();
+            }
+        }
+
+        window.onload = decodeAndLoadIframe;
+    </script>
+
+</body>
+</html>
