@@ -30,20 +30,18 @@
             height: 100%;
         }
         .iframe-message {
-            position: absolute;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
+            width: 100%;
             background: rgba(255, 0, 0, 0.9);
             color: #fff;
             padding: 15px 25px;
-            border-radius: 10px;
             font-size: 20px;
             font-weight: bold;
             white-space: nowrap;
-            z-index: 10;
+            text-align: center;
             box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
             animation: blink 1s infinite alternate;
+            position: relative;
+            top: 0;
         }
         @keyframes blink {
             0% { opacity: 1; }
@@ -72,6 +70,8 @@
 
     <h2>Ten-Sports</h2>
 
+    <div class="iframe-message">🔊 Click "Unmute Stream" Button to Get Voice</div>
+
     <script type="text/javascript">
         atOptions = {
             'key' : '329e4e16be857e74719c7bd77be59ed9',
@@ -85,7 +85,6 @@
 
     <div class="iframe-container" id="iframeWrapper">
         <div class="iframe-wrapper">
-            <div class="iframe-message">🔊 Click "Unmute Stream" Button to Get Voice</div>
             <iframe id="myIframe" 
                 style="border:0px;" 
                 name="myiFrame" 
