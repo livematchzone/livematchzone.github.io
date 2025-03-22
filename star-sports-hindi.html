@@ -33,6 +33,25 @@
             height: 100%;
             border: 0;
         }
+        .iframe-message {
+            position: relative;
+            display: inline-block;
+            background: rgba(255, 0, 0, 0.9);
+            color: #fff;
+            padding: 15px 25px;
+            font-size: 20px;
+            font-weight: bold;
+            white-space: nowrap;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+            animation: blink 1s infinite alternate;
+            border-radius: 8px;
+            margin: 10px auto;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
         button {
             padding: 10px 20px;
             font-size: 18px;
@@ -46,6 +65,8 @@
 <body>
 
     <h2>Star-Sports-Hindi</h2>
+    
+    <div class="iframe-message">🔊 Click "Unmute Stream" Button to Get Voice</div>
 
 <script type="text/javascript">
     atOptions = {
